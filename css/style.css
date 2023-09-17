@@ -1,3 +1,195 @@
+/* #clock {
+	font-size: 50px;
+	text-align: center;
+
+	border-width: 5px;
+	border-color: red;
+	border-style: solid;
+
+
+} */
+
+
+/* #greeting {
+	color: royalblue;
+	font-size: 30px;
+	text-align: center;
+	
+	border-width: 5px;
+	border-color: red;
+	border-style: solid;
+
+
+	padding: 100px;
+	
+} */
+
+/* border-width: 5px;
+border-color: red;
+border-style: solid; */
+
+
+
+
 .hidden {
-    display: none;
+	display: none;
+}
+
+#main {
+	display: grid;
+	height: 90vh;
+	justify-content: center;
+	align-content: center;
+	grid-template-rows: 240px 42px 21px 33%;
+	gap: 30px;
+}
+
+#clock {
+	color: white;
+	text-align: center;
+	font-size: 150px;
+	font-weight: bold;
+	user-select: none;
+	text-shadow: 0 2px 40px rgb(0, 0, 0);
+}
+
+#login-form {
+	display: grid;
+	height: 42px;
+	justify-content: center;
+	gap: 20px;
+}
+
+#login-form #loginInput {
+	color: white;
+	background-color: transparent;
+	font-size: 15px;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: rgba(105, 138, 236, 0.9);
+	outline: none;
+}
+
+#login-form #loginInput::placeholder {
+	color: rgba(105, 138, 236, 0.9)
+}
+
+#login-form #loginInput:focus::placeholder {
+	color: transparent;
+}
+
+#login-form #loginButton {
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(105, 138, 236, 0.9);
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+
+#login-form #loginButton:active {
+	transform: scale(0.94);
+}
+
+#greeting {
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(167, 227, 255);
+	user-select: none;
+	text-shadow: 0 2px 20px rgb(0, 0, 0);
+}
+
+#todo-form {
+	display: grid;
+	justify-content: center;
+}
+
+#todo-form #todoInput {
+	color: white;
+	background-color: transparent;
+	width: 250px;
+	font-size: 15px;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color:white;
+	outline: none;
+}
+
+#todo-form #todoInput::placeholder {
+	color: white;
+	text-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+#todo-form #todoInput:focus::placeholder {
+	color: transparent;
+	text-shadow: none;
+}
+
+#todo-list {
+	width: 30vh;
+	justify-self: center;
+	color: white;
+	user-select: none;
+	text-shadow: 0 2px 5px rgb(0, 0, 0);
+	line-height: 230%;
+}
+
+#todo-list li button {
+	border: none;
+	border-radius: 10px;
+	background-color: rgba(255, 210, 9, 0.8);
+	margin-right: 10px;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todo-list li button:active {
+	transform: scale(0.9);
+}
+
+#header {
+	display: grid;
+	height: 5vh;
+	justify-content: right;
+	color: white;
+	user-select: none;
+	text-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+#header #city {
+	justify-self: right;
+}
+
+#quoteBox {
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(190, 255, 201, 0.288);
+	margin-right: 3px;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px rgba(182, 180, 180, 0.3);
+	text-align: center;
+	padding: 5px;
+	justify-self: center;
+	font-size: 15px;
+	user-select: none;
+
+	display: grid;
+	height: 5vh;
+}
+
+#quoteBox #quote {
+	color: rgb(49, 114, 23);
+	text-shadow: 0 2px 40px rgb(236, 229, 229);
+}
+
+#quoteBox #quote {
+	font-weight: bold;
+	color: rgb(49, 114, 23);
+	text-shadow: 0 2px 40px rgb(236, 229, 229);
 }

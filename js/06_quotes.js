@@ -1,6 +1,6 @@
 const quotes = [
   {
-    quote: "Life is not fair; get used to it.",
+    quote: "Life is not fair get used to it.",
     author: "Bill Gates",
   },
   {
@@ -21,8 +21,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quoteBox span:first-child");
+const author = document.querySelector("#quoteBox span:last-child");
 const todaysQuotes = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuotes.quote;

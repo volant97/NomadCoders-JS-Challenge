@@ -5,40 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
-  <title>Momentum App</title>
-  <style>
-    span {
-      color:chocolate;
-    }
-  </style>
+  <title>Hello!</title>
 </head>
 
 <body>
-  <h2 id="clock">00:00:00</h2>
+  <div id="header">
+    <span id="weather"></span>
+    <span id="city"></span>
+  </div>
 
-  <div>
-    <form class="hidden" id="login-form">
-      <input type="text" placeholder="What is your name?" required />
-      <button>Log In</button>
+
+
+  <div id="main">
+    <div id="clock"></div>
+
+  
+      <form id="login-form">
+        <input id="loginInput" type="text" autocomplete='off' placeholder="What is your name?" required />
+        <button id="loginButton">Log In</button>
+        <div id="greeting"></div>
+      </form>
+    
+
+
+
+    <form id="todo-form">
+      <input id="todoInput" class="hidden" type="text" autocomplete='off' placeholder="Write a To Do and Press Enter" required />
     </form>
-    <h1 class="hidden" id="greeting"></h1>
+    <p id="todo-list"></p>
+
+
+
+
+    <div id="quoteBox">
+      <span id="quote"></span>
+      <span id="author"></span>
+    </div>
+
   </div>
 
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To Do and Press Enter" required />
-  </form>
-  <ul id="todo-list">
-  </ul>
 
-  <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
 
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
 
   <script src="js/01_clock.js"></script>
   <script src="js/02_greeting.js"></script>
